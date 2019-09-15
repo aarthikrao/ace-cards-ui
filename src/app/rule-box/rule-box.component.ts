@@ -32,6 +32,8 @@ export class RuleBoxComponent implements OnInit {
       maxLines: 10,
       fontSize: 18,
       value: this.text,
+      showLineNumbers:false,
+      showGutter:false,
     };
 
     this.codeEditor = ace.edit(element, editorOptions);
