@@ -24,9 +24,26 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "node_modules/@clr/ui/clr-ui.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+              "node_modules/@clr/icons/clr-icons.min.js",
+              "node_modules/ace-builds/src-min/ace.js",
+              "node_modules/ace-builds/src-min/mode-xml.js",
+              "node_modules/ace-builds/src-min/mode-html.js",
+              "node_modules/ace-builds/src-min/theme-vibrant_ink.js",
+              "node_modules/ace-builds/src-min/snippets/xml.js",
+              "node_modules/ace-builds/src-min/snippets/html.js",
+              "node_modules/ace-builds/src-min/ext-beautify.js",
+              "node_modules/ace-builds/src-min/ext-searchbox.js",
+              "node_modules/ace-builds/src-min/ext-language_tools.js",
+              { "bundleName": "worker-xml", "input": "node_modules/ace-builds/src-min/worker-xml.js" },
+              { "bundleName": "worker-html", "input": "node_modules/ace-builds/src-min/worker-html.js" }
+
+            ]
           },
           "configurations": {
             "production": {
@@ -120,6 +137,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "cards-ui"
 }
